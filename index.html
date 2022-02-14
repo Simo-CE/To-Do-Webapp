@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -14,28 +15,34 @@
         article     tasks/completed
         footer -->
 
-    <header>
-        <div class="task">
-            Add task field
-        </div>
-    </header>
-
     <aside>
-
+        Aside
+        navigation
     </aside>
 
-    <section>
-        <div class="todo">
-            Tasks to do
-        </div>
+    <div class="main">
+        
+        <header class="main">
+            <div class="card task">
+                <input type="text">
+                <button>add</button>
+            </div>
+        </header>
 
-        <div class="completed">
-            Completed tasks
-        </div>
-    </section>
+        <section>
+            <div class="card">
+                <h3><span class="todot"></span>Tasks to do</h3>
+                <p class="tasks"></p>
+            </div>
 
+            <div class="card">
+                <h3> <span class="codot"></span> Completed tasks </h3>
+                <p class="completed"></p>
+            </div>
+        </section>
+    </div>
     <footer>
-        Created by Mr Smiley
+        Created by @Mr_Smiley
     </footer>
 
 </body>
