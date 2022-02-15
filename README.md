@@ -1,4 +1,4 @@
-# To-Do-Webapp
+# To-Do
 ## API-Powered webapp
 
 ### Technologies used:
