@@ -1,3 +1,6 @@
+@import "./scss/fontawesome.scss";
+@import "./scss/solid.scss";
+@import "./scss/brands.scss";
 /* 
 Colors:
     background glossy white #F0F4FB
@@ -11,7 +14,6 @@ Colors:
 $background: #f0f4fb;
 $darkBlue: #2b303a;
 $blueSky: #58a4b0;
-//$shadow: #22447b;
 $shadow: #b3b3b3;
 $orange: #d64933;
 
@@ -19,6 +21,7 @@ $font-stack: "Nunito", sans-serif;
 
 * {
     box-sizing: border-box;
+    //outline: 0.1rem solid red !important;
 }
 
 html {
@@ -29,7 +32,6 @@ body {
     font: 1rem $font-stack;
     background-color: $background;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: 0.4fr 1.6fr;
     grid-template-rows: 0.99fr 0.01fr;
@@ -46,7 +48,34 @@ body {
 
         header {
             background-color: $darkBlue;
-            height: 15%;
+            height: 20%;
+            .addTask {
+                display: flex;
+                margin: auto;
+                width: 100%;
+                padding: 0% 10%;
+                height: 3rem;
+
+                input {
+                    outline: none;
+                    border-radius: 1rem;
+                    //border: 1px solid #ccc;
+                    border: none;
+                    width: 100%;
+                    padding-left: 2%;
+                    font-size: large
+                }
+                .add {
+                    @include fa-icon-solid($fa-var-plus);
+                    font-size: 2em;
+                    color: $darkBlue;
+                    margin-left: -2rem;
+                    border-radius: 50%;
+                    border: none;
+                    padding: 1%;
+                    width: 3rem;
+                }
+            }
         }
 
         //cards
@@ -89,10 +118,8 @@ body {
                     }
                 }
                 .todo {
-
                 }
                 .completed {
-
                 }
             }
         }
