@@ -19,29 +19,40 @@
         <header class="main">
             <div class="card addTask">
                 
-                <input type="text" placeholder="add task">
+                <input type="text" id="taskInput" placeholder="add task">
                 <button class="add"></button>
                 
             </div>
+            <!-- <span id="error">Please enter a non empty task!</span> -->
+            <span id="error"></span>
         </header>
-
         <section>
+            
             <div class="card">
-                <h3><span class="todot"></span>Tasks to do</h3>
-                <hr>
-                <p class="tasks"></p>
+                <h3><span class="todot"></span>To do</h3>
+                <hr class="hrtodo">
+                <ul class="taskList">
+                </ul>
+                <!-- <li>
+                    <p>Completed tasks</p>
+                    <span class="removeIcon"></span>
+                    <span class="checkIcon"></span>
+                </li> -->
             </div>
 
             <div class="card">
-                <h3> <span class="codot"></span> Completed tasks </h3>
-                <hr>
-                <p class="completed"></p>
+                <h3> <span class="codot"></span>Completed</h3>
+                <hr class="hrcomp">
+                <ul class="compTask"></ul>
             </div>
         </section>
     </div>
+
     <footer>
         Created by @Mr_Smiley
     </footer>
+
+    <script src="/src/resources/main.js"></script>
 
 </body>
 
