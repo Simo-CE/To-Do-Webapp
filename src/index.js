@@ -11,10 +11,7 @@ api.listen(port, () => {
 })
 
 /* 
-* clg vscode
-* test shortcut for console
 * local storage
-* js file enhancement
 * express docs
 * connecting index.html to api using middleware
 * connecting the add button
