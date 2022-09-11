@@ -4,16 +4,7 @@
 ### Technologies used:
 ```
 html5
-```
-
-```
-Scss
-```
-
-```
+SCSS
 JavaScript
-```
-
-```
 Express.js
 ```
