@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="/src/public/resources/css/style.css">
+</head>
+
+<body>
+
+    <aside>
+        <!-- Aside navigation -->
+    </aside>
+
+    <div class="main">
+        
+        <header class="main">
+            <div class="card addTask">
+                
+                <input type="text" id="taskInput" placeholder="add task">
+                <button class="add"></button>
+                
+            </div>
+            <!-- <span id="error">Please enter a non empty task!</span> -->
+            <span id="error"></span>
+        </header>
+        <section>
+            
+            <div class="card">
+                <h3><span class="todot"></span>To do</h3>
+                <hr class="hrtodo">
+                <ul class="taskList">
+                </ul>
+                <!-- <li>
+                    <p>Completed tasks</p>
+                    <span class="removeIcon"></span>
+                    <span class="checkIcon"></span>
+                </li> -->
+            </div>
+
+            <div class="card">
+                <h3> <span class="codot"></span>Completed</h3>
+                <hr class="hrcomp">
+                <ul class="compTask"></ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Created by @Mr_Smiley
+    </footer>
+
+    <script src="/src/resources/main.js"></script>
+
+</body>
+
+</html>

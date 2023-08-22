@@ -12,6 +12,8 @@
 .fas,
 .fa-solid,
 body .main header .addTask .add,
+body .main section .card li .removeIcon,
+body .main section .card li .checkIcon,
 .far,
 .fa-regular,
 .fal,
@@ -31,7 +33,7 @@ body .main header .addTask .add,
   text-rendering: auto;
 }
 
-body .main header .addTask .add {
+body .main header .addTask .add, body .main section .card li .removeIcon, body .main section .card li .checkIcon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -7333,7 +7335,9 @@ readers do not read off random characters that represent icons */
 
 .fas,
 .fa-solid,
-body .main header .addTask .add {
+body .main header .addTask .add,
+body .main section .card li .removeIcon,
+body .main section .card li .checkIcon {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
@@ -9233,6 +9237,8 @@ body .main header .addTask .add {
   content: "\f63f";
 }
 
+/* @import "./scss/duotone.scss";
+@import "./scss/_duotone-icons.scss"; */
 /* 
 Colors:
     background glossy white #F0F4FB
@@ -9304,7 +9310,7 @@ body .main header .addTask input {
 }
 
 body .main header .addTask .add {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #2b303a;
   margin-left: -2rem;
   border-radius: 50%;
@@ -9315,6 +9321,40 @@ body .main header .addTask .add {
 
 body .main header .addTask .add::before {
   content: "\2b";
+}
+
+body .main header .addTask .animation:hover {
+  -webkit-animation: rotate 1s ease 0s 1 normal forwards;
+          animation: rotate 1s ease 0s 1 normal forwards;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+body .main header .error {
+  color: #f16767;
+  margin-left: 1%;
+  font-size: small;
+  padding-bottom: 0.5em;
 }
 
 body .main section {
@@ -9341,6 +9381,22 @@ body .main section .card {
   position: relative;
 }
 
+body .main section .card .hrtodo {
+  width: 15%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #d64933;
+  border: none;
+}
+
+body .main section .card .hrcomp {
+  width: 15%;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #58a4b0;
+  border: none;
+}
+
 body .main section .card h3 {
   text-align: center;
   padding: 0%;
@@ -9365,6 +9421,63 @@ body .main section .card h3 .codot {
   top: 0.5rem;
   left: 0.5rem;
   background-color: #58a4b0;
+}
+
+body .main section .card .taskList {
+  padding: 0%;
+  margin: 0.1em;
+  list-style: none;
+}
+
+body .main section .card .compTask {
+  padding: 0%;
+  margin: 0.1em;
+  list-style: none;
+}
+
+body .main section .card li {
+  padding: 1em 1em;
+  background-color: #f0f4fb;
+  margin: 0.1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+body .main section .card li .removeIcon {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 11%;
+  color: #b8b4b4;
+}
+
+body .main section .card li .removeIcon::before {
+  content: "\f057";
+}
+
+body .main section .card li .removeIcon:hover {
+  color: #d41818;
+}
+
+body .main section .card li .checkIcon {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 2%;
+  color: #b8b4b4;
+}
+
+body .main section .card li .checkIcon::before {
+  content: "\f058";
+}
+
+body .main section .card li .checkIcon:hover {
+  color: #6dd418;
 }
 
 body footer {
